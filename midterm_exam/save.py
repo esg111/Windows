@@ -11,12 +11,14 @@ class WriteFile:
                      '최소 높이', '최대 높이', '평균 높이',
                      '메모']
 
-    def writeFile(self, var_list):
-        file = open('test.txt', 'a+')
-        file.write(str(datetime.today()) + '\n')
-        for idx, i in enumerate(var_list):
-            if idx == 16:
-                file.write(self.name[idx] + ": " + str(i.get('1.0', tkinter.END)) + '\n')
-            else:
-                file.write(self.name[idx] + ": " + str(i.get()) + '\n')
-        file.close()
+    # def writeFile(self, var_list):
+    #     file = open('test.txt', 'a+')
+    #     file.write(str(datetime.today()) + '\n')
+    #     for idx, i in enumerate(var_list):
+    #         if idx == 16:
+    #             file.write(self.name[idx] + ": " + str(i.get('1.0', tkinter.END)) + '\n')
+    #         else:
+    #             file.write(self.name[idx] + ": " + str(i.get()) + '\n')
+    #     file.close()
+    #
+

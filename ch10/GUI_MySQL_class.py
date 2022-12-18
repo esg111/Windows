@@ -153,9 +153,10 @@ class MySQL():
         self.close(cursor, conn)
 
 
-# if __name__ == '__main__':
-#     mySQL = MySQL()
-#
+if __name__ == '__main__':
+    mySQL = MySQL()
+
+    mySQL.showBooks()
 #     try:
 #         mySQL.createTables()
 #         mySQL.showTables()
